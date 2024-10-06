@@ -1,0 +1,49 @@
+.main {
+    position: relative;
+    height: 500px; /* Set a height for the parent container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+    background-color: #f9f9f9; /* Set a background color */
+}
+
+.cardOne {
+    top: 200px; /* Lowered position */
+    left: 50px; /* Increased left gap */
+    z-index: 1;
+    position: absolute;
+    transition: transform 0.3s; /* Smooth transitions */
+}
+
+.cardTwo {
+    top: 150px; /* Lowered position */
+    left: 250px; /* Increased left gap */
+    transform: rotate(10deg); /* Slight rotation for visual interest */
+    z-index: 2;
+    position: absolute;
+    transition: transform 0.3s; /* Smooth transitions */
+}
+
+.cardThree {
+    top: 320px; /* Lowered position */
+    left: 150px; /* Increased left gap */
+    z-index: 3;
+    position: absolute;
+    transition: transform 0.3s; /* Smooth transitions */
+}
+
+.cardFour {
+    top: 220px; /* Lowered position */
+    left: 400px; /* Increased left gap */
+    transform: rotate(-10deg); /* Slight rotation for visual interest */
+    z-index: 4;
+    position: absolute;
+    transition: transform 0.3s; /* Smooth transitions */
+}
+
+/* Optional hover effects */
+.cardOne:hover,
+.cardTwo:hover,
+.cardThree:hover,
+.cardFour:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
