@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import Card from "../components/Card";
 import styles from "./Home.module.css";
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={`  flex-1    bg-[#FFFD92] main px-56 `}>
@@ -35,7 +37,12 @@ const Home = () => {
           What do you want to try next? Think <br />
           of something you’re into—like “easy <br /> chicken dinner”—and see
           what you find. <br />
-          <button className="text-lg bg-red-500 px-8 mr-44 mt-4 py-2 rounded-full text-white">
+          <button
+            onClick={() => {
+              navigate("/all");
+            }}
+            className="text-lg bg-red-500 px-8 mr-44 mt-4 py-2 rounded-full text-white"
+          >
             Explore
           </button>
         </p>
